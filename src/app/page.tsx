@@ -9,7 +9,7 @@ export default function Home() {
     // grid grid-rows-[20px_1fr_20px]
     <div>
       <Hero />
-      <div className='mb-20 mt-12 md:px-56 px-8'>
+      <div className='mx-auto max-w-7xl mb-20 mt-12 md:px-56 px-8'>
       {/* style={{margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`}} */}
         <h2 className="text-xl font-bold">Our Work</h2>
         <div className="w-full gap-6 grid md:grid md:grid-cols-3 my-4 ">
