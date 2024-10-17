@@ -9,22 +9,23 @@ export default function Home() {
     // grid grid-rows-[20px_1fr_20px]
     <div>
       <Hero />
-      <div  style={{margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`}}>
+      <div className='mb-20 mt-12 md:px-56 px-8'>
+      {/* style={{margin: `0 auto`, maxWidth: 960, padding: `1.45rem 1.0875rem`}} */}
         <h2 className="text-xl font-bold">Our Work</h2>
         <div className="w-full gap-6 grid md:grid md:grid-cols-3 my-4 ">
           {
             ourWork.map((data, id) => <div key={id} className='shadow-lg'>
-            <Image 
-              src={data.path}
-              width={500}
-              height={500}
-              alt={data.title}
-              className='hover:scale-110'
-            />
-            <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2">{data.title}</div>
-            <p className="text-gray-700 text-base">{data.content}.</p>
-        </div>
+              <Image 
+                src={data.path}
+                width={500}
+                height={500}
+                alt={data.title}  
+                className='hover:scale-110'
+              />
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">{data.title}</div>
+                <p className="text-gray-700 text-base">{data.content}.</p>
+              </div>
             </div>)
           }
         </div>
