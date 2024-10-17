@@ -1,7 +1,5 @@
 export const ourWork = [
-    {path: "https://www.youtube.com/shorts/oHKmm0jkY_Y", chart_pattern: "Wedge", content: "Breakout on the upside. Entry Point after the first bullish mommentum candlestick"},
-    {path: "https://www.youtube.com/shorts/zkXBHBSZQio", chart_pattern: "Trendline", content: "Trendline broken and retested before moving to the upside"},
-    {path: "https://www.youtube.com/shorts/zkXBHBSZQio", chart_pattern: "Double Top", content: "The price action broke the neckline and retested before pushing downside"},
-    {path: "https://www.youtube.com/shorts/oHKmm0jkY_Y", chart_pattern: "Trendline", content: "Trendline broken and retested before moving to the downside "},
-    {path: "https://www.youtube.com/shorts/OCL6dIFr9jg", chart_pattern: "Flag", content: "Broke, retested and moved downside"},
+    {path: "/static/d6e6c11b-ad59-4f0f-86f4-9b83ea8fca6a.jfif", title: "Fruit", content: "Breakout on the upside. Entry Point after the first bullish mommentum candlestick"},
+    {path: "/static/39607d82-ef0c-4059-a42d-e2f8c284ec23.jfif", title: "Fruit", content: "Breakout on the upside. Entry Point after the first bullish mommentum candlestick"},
+    {path: "/static/1b35c8d4-4d3b-4336-a2f7-80d164a087f4.jfif", title: "Fruit", content: "Breakout on the upside. Entry Point after the first bullish mommentum candlestick"}
 ]

@@ -1,4 +1,5 @@
 // import Video from 'next-video';
+import Image from 'next/image'
 import Hero from "./components/hero";
 import { ourWork } from "./constants/Index";
 // import awesomeVideo from 'https://youtu.be/XDqEvmxnLeY';
@@ -13,13 +14,17 @@ export default function Home() {
         <div className="w-full gap-6 grid md:grid md:grid-cols-3 my-4 ">
           {
             ourWork.map((data, id) => <div key={id} className='shadow-lg'>
-            {/* <Video  poster={data.path}/> */}
-            {/* <video width="320" height="240" controls>
-              <source src="https://youtu.be/XDqEvmxnLeY" type="video/mp4">
-              <source src="https://youtu.be/XDqEvmxnLeY" type="video/ogg">
-              Your browser does not support the video tag.
-            </video> */}
-              <p>{data.chart_pattern}</p>
+            <Image 
+              src={data.path}
+              width={500}
+              height={500}
+              alt={data.title}
+              className='hover:scale-110'
+            />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">{data.title}</div>
+            <p className="text-gray-700 text-base">{data.content}.</p>
+        </div>
             </div>)
           }
         </div>
